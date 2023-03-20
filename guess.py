@@ -10,16 +10,18 @@
 
 import random
 ans=random.randint(1,100)
-
+count=0
 while True:
+	count+=1 #count=count+1
 	num = input('請輸入數字 :')
 	num = int(num)
 	if num==ans : 
 		print('恭喜答對')
+		print('總共猜了',count,'次')
 		break
 	else:
 		if num < ans:
 			print('比答案小')
 		elif num >ans:
 			print('比答案大')
-		
+	print('總共猜了',count,'次')
